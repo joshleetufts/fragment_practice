@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="android_default_grey">#EBEBEF</color>
+
+    <color name="tutorial_status_bar">#88000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="anyfi_toolbar_color">#6451d4</color>
+    <color name="anyfi_toolbar_divider_color">#AEAEAE</color>
+    <color name="anyfi_status_color">#5441c4</color>
+    <color name="wifi_connecting_bg">#d0caf2</color>
+    <color name="switch_thumb">#FFFFFF</color>
+    <color name="switch_on_bg">#6451D4</color>
+    <color name="switch_off_bg">#DEDEDE</color>
+    <color name="main_head_text">#535353</color>
+    <color name="main_ssid_text">#383838</color>
+    <color name="main_mid_text">#383838</color>
+    <color name="main_state">#b2a9ed</color>
+    <color name="progress_bar">#6451D4</color>
+    <color name="dialog_scheme">#6451D4</color>
+
+    <color name="noti_background_color">#3B4147</color>
+    <color name="noti_text_color">#939598</color>
+    <color name="noti_green_text">#52FF83</color>
+    <color name="noti_yellow_text">#F9FF52</color>
+    <color name="noti_red_text">#FF5e52</color>
+
+    <color name="main_purple_text">#6351D3</color>
+    <color name="main_green_text">#74B930</color>
+    <color name="main_blue_text">#0096FF</color>
+    <color name="main_red_text">#D64646</color>
+    <color name="main_grey_text">#6b6b6b</color>
+    <color name="main_divider_line">#C3C3C3</color>
+    <color name="main_nodb_bg">#e2e2e2</color>
+
+    <color name="main_background">#d1d1d1</color>
+    <color name="main_sharable_wifi">#5243ae</color>
+    <color name="main_border_color2">#5140b6</color>
+    <color name="shared_wifi_list">#705de1</color>
+    <color name="main_not_sharable_wifi">#383838</color>
+    <color name="default_connecting_bg">#d4c3f6</color>
+    <color name="main_connected">#6ce6ab</color>
+    <color name="main_category_unfilter_bg">#39364e</color>
+    <color name="main_category_available_bg">#463a8f</color>
+    <color name="main_category_filter_bg">#b64e35</color>
+    <color name="shared_by">#4DFFFFFF</color>
+    <color name="favorite_color">#aeaeae</color>
+    <color name="Connecting_color">#36d488</color>
+    <color name="Error_layout">#7f7d8c</color>
+    <color name="sharable_divider">#797785</color>
+    <color name="password_entry">#5b49c9</color>
+
+
+</resources>

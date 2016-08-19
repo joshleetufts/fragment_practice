@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_divider_line">
+    </View>
+
+    <RelativeLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/On_Off"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/icon_widget"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/On_Off_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위젯 설정 ON/OFF"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/On_Off"
+            android:layout_toRightOf="@+id/On_Off"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="2dp"
+            android:onClick="onCheckboxClicked" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_divider_line">
+    </View>
+
+    <RelativeLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/WiFi_alarm"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/icon_vib"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/WiFi_alarm_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wi-Fi 연결시 진동 알림"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@+id/WiFi_alarm"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_alarm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="2dp"
+            android:onClick="onCheckboxClicked"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_divider_line">
+    </View>
+
+    <RelativeLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/wifi_signal"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/icon_signal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10.5dp"/>
+
+    <TextView
+        android:id="@+id/wifi_signal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최소 신호 세기"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/wifi_signal"
+        android:layout_toRightOf="@+id/wifi_signal"
+        />
+
+    <TextView
+        android:id="@+id/Wifi_status_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/wifi_signal_text"
+        android:layout_below="@+id/wifi_signal_text"
+        android:layout_marginTop="15dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Wifi_status_1"
+            android:layout_alignBaseline="@+id/Wifi_status_1"
+            android:layout_marginLeft="12dp"
+            android:text="@string/nav_status_1"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/Wifi_status_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:textSize="20dp"
+            android:layout_alignLeft="@+id/wifi_signal_text"
+            android:layout_below="@+id/Wifi_status_1"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Wifi_status_2"
+            android:layout_alignBaseline="@+id/Wifi_status_2"
+            android:layout_marginLeft="12dp"
+            android:text="@string/nav_status_2"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/Wifi_status_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bad"
+            android:textSize="20dp"
+            android:layout_alignLeft="@+id/wifi_signal_text"
+            android:layout_below="@+id/Wifi_status_2"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Wifi_status_3"
+            android:layout_alignBaseline="@+id/Wifi_status_3"
+            android:layout_marginLeft="12dp"
+            android:text="@string/nav_status_3"
+            android:textSize="15dp"
+            />
+
+
+        <!-- radio stuff
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/nav_status_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_status_1"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/nav_status_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_status_2" />
+
+            <RadioButton
+                android:id="@+id/nav_status_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_status_3" />
+
+        </RadioGroup>
+
+        -->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_divider_line">
+    </View>
+
+    <RelativeLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/customer_service"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/icon_help"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/customer_service_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고객센터"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/customer_service"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_divider_line">
+    </View>
+
+</LinearLayout>

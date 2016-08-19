@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fragment_Practice</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="nav_status_1"> 동영상 시청 가능한 수준 </string>
+    <string name="nav_status_2"> 웹 서칭 가능한 수준 </string>
+    <string name="nav_status_3"> 메신저 전송 가능한 수준 </string>
+</resources>
